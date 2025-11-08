@@ -47,12 +47,13 @@
     margin: 144px auto;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .devInfo{
     font-size: 16px;
     display: flex;
-    
+    flex:1;
     justify-content: center;
     flex-direction: column;
     font-family: "Great Vibes", cursive;
@@ -261,12 +262,16 @@ p{
     margin-left: 10px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 768px){
 
     .buttons{
         font-size: 6px;
     }
 
+    .infoContainer{
+        flex-direction: column;
+        text-align: center;
+    }
     .devInfo{
         font-size: 10px;
     }
@@ -275,8 +280,9 @@ p{
     margin:50px 8px;
    }
 
-    .devPic{
-        display: none;
+    .devPic img{
+        width: 250px;
+        margin-top: 20px;
     }
 }
 
